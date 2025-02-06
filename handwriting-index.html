@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwriting Practice</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Handwriting Practice Generator</h2>
+        <textarea id="inputText" placeholder="Enter text for handwriting practice..."></textarea>
+        <button onclick="updatePreview()">Generate Preview</button>
+        <button onclick="exportPDF()">Download as PDF</button>
+        <button onclick="exportPNG()">Download as PNG</button> <!-- New button for PNG export -->
+        <div id="preview" class="preview-container"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+    <script src="jspdf.umd.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
